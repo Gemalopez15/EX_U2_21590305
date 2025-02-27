@@ -18,6 +18,9 @@
                     {{ post.content }}
                     </div>
             </div>
+            <footer class="card-footer">
+                <a href="{{ url_for('update_post', id = post.id) }}" class="card-footer-item">Editar</a>
+                <a href="{{ url_for('delete_post', id = post.id) }}" class="card-footer-item">Eliminar</a>
         </div>
         {% endfor %}
     </div>
